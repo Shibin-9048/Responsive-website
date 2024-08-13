@@ -1,0 +1,363 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 250px;
+}
+.listitems{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+/* step 4 */
+.links:hover{
+    text-decoration: underline;
+    color: rgb(243, 11, 11);
+}
+
+/* home */
+
+
+.img1{
+    width: 100%;
+}
+.homebody{
+    margin-top: 20px;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px; 
+  font-family: "Inconsolata", monospace;
+   
+  
+
+}
+
+#but{
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80px;
+    
+   
+    font-size: xx-large;
+    border-color: white;
+}
+
+
+
+/* about */
+
+#about{
+    margin: 15% 8% 0px 8%;
+    
+}
+
+
+.aboutContent{
+    font-size: 20px;
+    text-align: justify;
+}
+#username1{
+    overflow: hidden;
+    font-size: 3.6rem;
+    font-weight: 700;
+    border-right: 0.15em solid white;
+    white-space: nowrap;
+    font-family: "Inconsolata", monospace;
+    margin-bottom: 20px;
+    animation: typing 3s steps(40,end)infinite;
+
+}
+#username2{
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+
+}
+.aboutinformations{
+    margin-top: 1.3rem;
+}
+#description{
+    line-height: 30px;
+    font-family: "Inconsolata", monospace;
+}
+#button{
+    background-color: rgb(253, 251, 251);
+    color: rgb(241, 5, 5);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: large;
+    border-color: red;
+    width: 150px;
+}
+
+/* about2 */
+#about2{
+    margin: 5% 8% 0px 8%;
+    background-color:white;
+}
+.sectionHead{
+    text-align: center;
+}
+.mainHead{
+    font-size: 60px;
+}
+
+.row{
+    height: 300px;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.col{
+    width:270px;
+    height: 320px;
+    background-color:rgb(1, 8, 8) ;
+   
+}
+
+.head2{
+     margin: 10px;
+     font-size: 25px;
+     color: white;
+     font-family: "Inconsolata", monospace;
+}
+#button1{
+    background-color: rgb(0, 8, 8);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: large;
+    border-color: white;
+    
+}
+
+
+
+#button1:hover{
+    
+    color: rgb(15, 0, 0);
+    background-color: rgb(245, 242, 242);
+}
+/* gallery */
+#skill{
+    margin: 8% 8% 0px 8%;
+    
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+    padding: 10px;
+  }
+.skillImg{
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+
+.img2{
+    width: 100%;
+}
+
+
+
+
+
+/* get in touch */
+
+#getintouch{
+    margin: 10% 35% 0px 35%;
+    background-color:white;
+}
+.sectionHead2{
+    text-align: center;
+    margin-bottom: 55px;
+}
+.mainHead2{
+    font-size: 50px;
+}
+input,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgb(232, 243, 243);
+
+}
+textarea{
+    height: 100px;
+    resize: vertical;
+    
+
+}
+#butt{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* contacts */
+
+#contact{
+    margin: 0px 8% 0px 8%;
+    background-color: darkslategray;
+    
+}
+.iconCollection{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+
+    color: rgb(248, 245, 245);
+    font-size: 1.8rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,black);
+}
+.icon:hover .brands{
+    color: rgb(10, 10, 10);
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+
+    
+}
+
+.informations1{
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.infoBox{
+    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
+}
+
+.infoBox>span{
+    margin-left: 1rem;
+}
+.infoBox:hover{
+    color: black;
+}
+
+/* footer */
+
+footer{
+    margin: 5% 0px 0px 0px;
+
+}
+#copyright{
+    text-align: center;
+    font-weight: 800;
+    
+}
+
+
+.upArrow{
+    float: right;
+    margin: -30px 30px 30px 0px;
+    
+}
+html{
+
+    scroll-behavior: smooth;
+}
+
+/* scroll bar */
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(233, 230, 224);
+    border-radius: 10px;
+}
